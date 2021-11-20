@@ -1,0 +1,16 @@
+[
+    {
+        "brand": "Mazda",
+        "model": "CX-5",
+        "hp": "175",
+        "price": "11000",
+        "id": "6"
+    },
+    {
+        "brand": "Mazda",
+        "model": "RX-8",
+        "hp": "240",
+        "price": "12000",
+        "id": "8"
+    }
+]

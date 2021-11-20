@@ -1,0 +1,86 @@
+[
+    {
+        "brand": "Audi",
+        "model": "A3",
+        "hp": "100",
+        "price": "15000",
+        "id": "2"
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Golf",
+        "hp": "200",
+        "price": "20000",
+        "id": "4"
+    },
+    {
+        "brand": "Tesla",
+        "model": "S",
+        "hp": "750",
+        "price": "90000",
+        "id": "5"
+    },
+    {
+        "brand": "Mazda",
+        "model": "CX-5",
+        "hp": "175",
+        "price": "11000",
+        "id": "6"
+    },
+    {
+        "brand": "Dodge",
+        "model": "Challanger",
+        "hp": "707",
+        "price": "150000",
+        "id": "7"
+    },
+    {
+        "brand": "Mazda",
+        "model": "RX-8",
+        "hp": "240",
+        "price": "12000",
+        "id": "8"
+    },
+    {
+        "brand": "Cupra",
+        "model": "Leon",
+        "hp": "200",
+        "price": "35000",
+        "id": "9"
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Arteon",
+        "hp": "270",
+        "price": "40000",
+        "id": "10"
+    },
+    {
+        "brand": "Ford",
+        "model": "Mustang",
+        "hp": "450",
+        "price": "100000",
+        "id": "11"
+    },
+    {
+        "brand": "Toyota",
+        "model": "Hilux 4x4",
+        "hp": "200",
+        "price": "52000",
+        "id": "12"
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Passat",
+        "hp": "150",
+        "price": "15000",
+        "id": "13"
+    },
+    {
+        "brand": "Ford",
+        "model": "Focus",
+        "hp": "150",
+        "price": "20000",
+        "id": "14"
+    }
+]

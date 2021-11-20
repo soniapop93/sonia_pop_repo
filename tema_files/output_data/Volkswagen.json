@@ -1,0 +1,23 @@
+[
+    {
+        "brand": "Volkswagen",
+        "model": "Golf",
+        "hp": "200",
+        "price": "20000",
+        "id": "4"
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Arteon",
+        "hp": "270",
+        "price": "40000",
+        "id": "10"
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Passat",
+        "hp": "150",
+        "price": "15000",
+        "id": "13"
+    }
+]

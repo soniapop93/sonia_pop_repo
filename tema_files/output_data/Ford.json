@@ -1,0 +1,16 @@
+[
+    {
+        "brand": "Ford",
+        "model": "Mustang",
+        "hp": "450",
+        "price": "100000",
+        "id": "11"
+    },
+    {
+        "brand": "Ford",
+        "model": "Focus",
+        "hp": "150",
+        "price": "20000",
+        "id": "14"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "brand": "Mazda",
+        "model": "CX-5",
+        "hp": "175",
+        "price": "11000",
+        "id": "6"
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Passat",
+        "hp": "150",
+        "price": "15000",
+        "id": "13"
+    },
+    {
+        "brand": "Ford",
+        "model": "Focus",
+        "hp": "150",
+        "price": "20000",
+        "id": "14"
+    }
+]
