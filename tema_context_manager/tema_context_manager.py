@@ -6,7 +6,7 @@
 list_names = ["Sonia", "Lucian", "James", "Sarah"]
 
 class ContextClass:
-    def __init__(self, list_names, char_index_to_upper):
+    def __init__(self, list_names):
         self.dict_names = {}
 
         count = 0
@@ -27,7 +27,7 @@ class ContextClass:
             return True
         
 
-with ContextClass(list_names, 2) as cont_class:
+with ContextClass(list_names) as cont_class:
     # print(cont_class[1][222])  # -> uncomment for IndexError
     # print(cont_class[200]) # -> uncoment for KeyError
     print(cont_class) 
