@@ -1,0 +1,18 @@
+Cat Adoption Site
+
+The idea of this site is to create a site for an easy adoption of a cat
+- the cats should be introduced by an admin user
+- a new cat added, should have the following: cat name, description, age, location and a photo (if a photo is not uploaded, should display a default picture)
+- the person who wants to adopt the cat, should create an account on the site and fill in a form
+- there should be a Login and Logout option, on the site (if logged in, should only display the Logout option)
+- every page should contain a header and a footer with details and menu
+
+There will be the following pages:
+- home page: will contain the cats ready for adoption added by the admin, the three recently adopted cats
+- cat page: should contain the name of the cat, photo and the details added (escription, age, location) and an option to Adopt it
+- the adoption page: should contain a few questions
+- register page: will have a form with some fields (first name, last name, username, e-mail, password)
+- login page: should have username and password fields
+- profile page: should display the user details like first name, last name, username, email and all the cats adopted by that user
+- contact page: will contain the location of the shelter and contact details
+- admin page: from here the admin should add the cats offered for adoption

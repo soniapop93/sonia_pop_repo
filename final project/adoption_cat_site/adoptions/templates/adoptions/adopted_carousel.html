@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        {% if adopted_cat_list %}
+        {% for cat in adopted_cat_list %}
+        <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.counter }}" {% if forloop.counter == 1 %} class="active"{% endif %}></li>
+        {% endfor %}
+        {% endif %}
+    </ol>
+    <div class="carousel-inner">
+    {% if adopted_cat_list %}
+    {% for cat in adopted_cat_list %}
+        <div class="carousel-item{% if forloop.counter == 1 %} active{% endif %}">
+            <img class="d-block w-100" src="{{ cat.cat_img.url }}" alt="First slide">
+            <h5>{{ cat.cat_obj.cat_name_text }}</h5>
+        </div>
+    {% endfor %}
+    {% endif %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+{% load static %}
+<html>
+{% include "adoptions/base.html" %}
+{% block content %}
+<style>
+    h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        color: black;
+        text-shadow: 3px 3px 5px #0000006e;
+        font-family: "Lucida Console", monospace;
+        align-content: center;
+        font-size: 4vw;
+        border-left: 7px solid green;
+        background-color: lightgrey;
+        padding-top: 1%;
+        padding-right: 1%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+    }
+
+   .thanks_text {
+        margin-left: 5%;
+        padding-left: 1%;
+    }
+</style>
+<body>
+<h1>Adoption form</h1>
+<div class="thanks_text">
+    <p><strong>Thank you for your response! Hopefully you will want to adopt a cat soon. </strong></p>
+</div>
+<br><br><br>
+{% endblock %}
+</div>
+</body>
+{% include "adoptions/footer.html" %}
+</html>

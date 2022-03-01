@@ -1,0 +1,57 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+{% include "adoptions/base.html" %}
+<style>
+  .date_published{
+    color: grey;
+    font-size: 75%;
+  }
+</style>
+<body>
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Recently Adopted Cats</h1>
+        <p class="lead text-muted">Check the recently adopted cats</p>
+        {% include "adoptions/adopted_carousel.html" %}
+        <p>
+          <a href="{% url 'adoptions:recently-adopted' %}" class="btn btn-success my-2">Adopted cats</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {% if latest_cat_list %}
+          {% for cat in latest_cat_list %}
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="details" src="{{ cat.cat_img.url }}" type="jpg"/>
+                <div class="card-body">
+                  <p class="card-text"><b>{{ cat.cat_obj.cat_name_text }}</b></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="/cats/{{ cat.cat_obj.id }}/" class="btn btn-sm btn-outline-secondary">View</a>
+                    </div>
+                    <p class="date_published"><b>{{ cat.cat_obj.pub_date }}</b></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+</main>
+
+{% include "adoptions/footer.html" %}
+
+  </body>
+</html>

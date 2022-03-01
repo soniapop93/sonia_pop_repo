@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+{% include "adoptions/base.html" %}
+{% block content %}
+<style>
+    h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: black;
+    text-shadow: 3px 3px 5px #0000006e;
+    font-family: "Lucida Console", monospace;
+    align-content: center;
+    font-size: 4vw;
+    border-left: 7px solid green;
+    background-color: lightgrey;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    }
+    .login {
+    padding: 5%;
+    }
+    .submit {
+    margin-top: -9%;
+    padding: 5%;
+    }
+</style>
+<body>
+<h1>Login</h1>
+<div class="login-user">
+  <form method="post">
+      {% csrf_token %}
+      <div class="login">
+        <p><strong>Username: </strong></p>
+        <p> {{ form.username }}</p>
+        <p><strong>Password: </strong> </p>
+        <p>{{ form.password }}</p>
+      </div>
+      <div class="submit">
+          <input type="submit" value="Submit">
+          <br><br>
+          <a href="{% url 'adoptions:index' %}">Back to home page</a>
+      </div>
+    </form>
+{% endblock %}
+</div>
+</body>
+{% include "adoptions/footer.html" %}
+</html>

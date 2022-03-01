@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+{% load static %}
+{% include "adoptions/base.html" %}
+  <style>
+    body {
+      background-size: 100% 100%;
+      background: rgb(78,78,78);
+      background-color: whitesmoke;
+    }
+    img {
+      width: 25%;
+      height: 25%;
+      margin: 3%;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .flex-box {
+      display: flex;
+    }
+    .details {
+      flex: 1;
+    }
+    h1 {
+    color: black;
+    margin-right: 5%;
+    text-shadow: 3px 3px 5px #0000006e;
+    font-family: "Lucida Console", monospace;
+    align-content: center;
+    font-size: 4vw;
+    border-left: 7px solid green;
+    background-color: lightgrey;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    }
+
+    .button {
+    border: transparent;
+    text-decoration: solid;
+    display: inline-block;
+    background-color: transparent;
+    font-size: medium;
+    cursor: pointer;
+    }
+    .confirm {
+      height: 20%;
+      width: 55%;
+      margin-top: 5%;
+    }
+
+    .adopt {background-color: #4CAF50;color: white;font-family: Arial, sans-serif;font-size: medium; text-decoration: none;}
+    .adopt {box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+    .adopt {border-color: transparent;}
+    .adopt {padding: 5% 30%;}
+    .adopt {transition-duration: 0.4s;}
+    .adopt:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: x-large;
+    }
+
+    .text_area {
+      width: 95%;
+      height: 50%;
+      border: 1px solid green;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+      text-shadow: black;
+      box-sizing: border-box;
+    }
+    .text {
+      color:black;
+      font-size: 110%;
+      margin-left: 2%;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-right: 2%;
+    }
+  </style>
+
+  <body>
+    <div class="flex-box">
+      <img class="details" src="{{ cat_details.cat_photo.url }}" type="jpg"/>
+      <div class="details">
+        <title>{{ cat.cat_name_text }}</title>
+        <h1>{{ cat.cat_name_text }}</h1>
+        <div class="text_area">
+          <div class="text">
+            <p><b>Description</b></p>
+            <p>{{ cat_details.description_text }}</p>
+            <p>Age: {{ cat_details.age }}</p>
+            <p>Location: {{ cat_details.location }}</p>
+          </div>
+        </div>
+        <div class="confirm">
+          <a href="/cats/{{ cat.id }}/adopt-cat" class=".button adopt" name="adopt"><b>Adopt me</b></a>
+        </div>
+      </div>
+    </div>
+  </body>
+{% include "adoptions/footer.html" %}
+</html>
